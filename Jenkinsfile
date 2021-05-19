@@ -36,7 +36,7 @@ pipeline{
         steps{
     
    	bat 'docker container stop jarimage'
-	bat 'docker container kill jarimage'
+	bat 'docker container rm jarimage'
         bat 'docker images'
         bat 'docker ps -a'
     //     bat 'docker images'
