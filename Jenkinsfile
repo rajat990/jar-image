@@ -35,8 +35,7 @@ pipeline{
     stage('Clea/ning up') {
         steps{
     
-   	bat 'docker container stop jarimage'
-	bat 'docker container rm jarimage'
+   	
         bat 'docker images'
         bat 'docker ps -a'
     //     bat 'docker images'
