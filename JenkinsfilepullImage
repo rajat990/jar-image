@@ -18,7 +18,7 @@ pipeline{
     }
     stage('run image at 8080 port') {
         steps{
-        bat "docker container run --rm --name jarimage -p 8080:8080 $registry"
+        bat "docker run -it --rm --name jarimage -p 8080:8080 $registry"
         }
     }
    
